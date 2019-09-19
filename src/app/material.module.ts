@@ -1,33 +1,43 @@
-import {NgModule} from "@angular/core";
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import {
-  MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
-  MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule
-} from '@angular/material';
-@NgModule({
-  imports: [
-  CommonModule, 
-  MatToolbarModule,
-  MatButtonModule, 
+  MatButtonModule,
   MatCardModule,
-  MatInputModule,
   MatDialogModule,
+  MatInputModule,
   MatTableModule,
+  MatToolbarModule,
   MatMenuModule,
   MatIconModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  MatGridListModule
+} from "@angular/material";
+@NgModule({
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatDialogModule,
+    MatTableModule,
+    MatMenuModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatGridListModule
   ],
   exports: [
-  CommonModule,
-   MatToolbarModule, 
-   MatButtonModule, 
-   MatCardModule, 
-   MatInputModule, 
-   MatDialogModule, 
-   MatTableModule, 
-   MatMenuModule,
-   MatIconModule,
-   MatProgressSpinnerModule
-   ],
+    CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatDialogModule,
+    MatTableModule,
+    MatMenuModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatGridListModule
+  ]
 })
-export class CustomMaterialModule { }
+export class CustomMaterialModule {}

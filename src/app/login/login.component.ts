@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import {LoginService} from '../login.service'
+import { LoginService } from "../login.service";
 
 @Component({
   selector: "app-login",
@@ -8,14 +8,14 @@ import {LoginService} from '../login.service'
 })
 export class LoginComponent implements OnInit {
   public user: any = {};
-  constructor(
-    private loginService: LoginService
-  ) {}
+
+  constructor(private loginService: LoginService) {}
 
   ngOnInit() {}
 
-  handleSubmit() :void{
-    console.log(this.user)
+
+  handleSubmit(): void {
+    console.log(this.user);
     this.loginService.login(this.user);
   }
 }

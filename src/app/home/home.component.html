@@ -1,1 +1,53 @@
-<p>home works!</p>
+<mat-grid-list
+  cols="3"
+  rowHeight="600px"
+  gutterSize="60px"
+  class="home-content-grid"
+>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <mat-card class="course-card">
+      <a routerLink="/courses" title='View All'
+        ><img mat-card-image src="../../assets/course.svg" alt="course" />
+      </a>
+      <mat-card-content>
+        <p>
+          Course Management
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-fab color="primary">ADD</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="1">
+    <mat-card class="teacher-card">
+      <img
+        mat-card-image
+        src="../../assets/teacher.svg"
+        alt="Photo of teacher"
+      />
+      <mat-card-content>
+        <p>
+          Teacher Management
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-fab color="primary">ADD</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <mat-card class="student-card">
+      <img mat-card-image src="../../assets/student.svg" alt="student" />
+      <mat-card-content>
+        <p>
+          Student Management
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-fab color="primary">ADD</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile></mat-grid-list
+>

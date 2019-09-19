@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { LoginService } from "../login.service";
 
 @Component({
   selector: "app-layout",
@@ -6,7 +7,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./layout.component.scss"]
 })
 export class LayoutComponent implements OnInit {
-  constructor() {}
+  constructor(private loginService: LoginService) {}
 
   ngOnInit() {}
+
+
+  handleLogout() {
+    this.loginService.logout();
+  }
 }

@@ -11,8 +11,9 @@ import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { CourseComponent } from './course/course.component';
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, LoginComponent, HomeComponent],
+  declarations: [AppComponent, LayoutComponent, LoginComponent, HomeComponent, CourseComponent],
   imports: [
 	BrowserModule,
 	HttpClientModule,
